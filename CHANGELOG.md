@@ -5,6 +5,29 @@ Todas as mudanças notáveis nesta biblioteca serão documentadas neste arquivo.
 O formato é baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.0/),
 e este projeto adere ao [Semantic Versioning](https://semver.org/lang/pt-BR/).
 
+## [Unreleased]
+
+### Added
+
+- Integração com o DeepSeek Harness em `dsh/`:
+  - `sync-skills.mjs` valida as skills e cria a árvore plana de symlinks em
+    `.dsh/skills` (projeto) e `~/.dsh/skills` (usuário)
+  - 5 agent presets (`backend`, `frontend`, `devops`, `qualidade`,
+    `docs-educacao`) gerados a partir do preset `standard` do harness
+  - `agents/install.mjs` instala/remove os presets de forma idempotente no
+    `cordis.patch.yml` do perfil
+  - `skills.manifest.json` como fonte da verdade de nomes/categorias
+  - `dsh/install.sh` como atalho para o setup completo
+- Documentação da integração em `dsh/README.md`
+
+### Fixed
+
+- Contagens de skills por categoria no `README.md` e `AGENTS.md` (real: 90
+  skills; API 5, Architecture 2, Automation 1, Code Quality 2, Database 3,
+  Documentation 1, Frontend 2, Productivity 1, Security 3)
+
+---
+
 ## [1.0.0] - 2026-07-16
 
 ### Added

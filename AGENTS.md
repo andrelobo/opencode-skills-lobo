@@ -10,26 +10,32 @@ Esta é uma biblioteca de **90+ skills** para o OpenCode, organizadas em 16 cate
 opencode-skills-lobo/
 ├── skills/                    # Skills organizadas por categoria
 │   ├── ai/                    # 13 skills de IA
-│   ├── api/                   # 6 skills de APIs
-│   ├── architecture/          # 5 skills de arquitetura
-│   ├── automation/            # 3 skills de automação
+│   ├── api/                   # 5 skills de APIs
+│   ├── architecture/          # 2 skills de arquitetura
+│   ├── automation/            # 1 skill de automação
 │   ├── backend/               # 7 skills de backend
-│   ├── code-quality/          # 5 skills de qualidade
-│   ├── database/              # 4 skills de banco de dados
+│   ├── code-quality/          # 2 skills de qualidade
+│   ├── database/              # 3 skills de banco de dados
 │   ├── devops/                # 10 skills de DevOps
-│   ├── documentation/         # 2 skills de documentação
+│   ├── documentation/         # 1 skill de documentação
 │   ├── education/             # 14 skills de educação
 │   ├── foundation/            # 3 skills fundamentais
-│   ├── frontend/              # 4 skills de frontend
+│   ├── frontend/              # 2 skills de frontend
 │   ├── inclusion/             # 19 skills de inclusão
-│   ├── productivity/          # 3 skills de produtividade
-│   ├── security/              # 4 skills de segurança
+│   ├── productivity/          # 1 skill de produtividade
+│   ├── security/              # 3 skills de segurança
 │   ├── testing/               # 4 skills de testes
 │   └── _meta/                 # Catálogo e templates
+├── dsh/                       # Integração com o DeepSeek Harness
+│   ├── install.sh             # skills + agent presets
+│   ├── sync-skills.mjs        # valida e achata as skills em symlinks
+│   ├── skills.manifest.json   # manifesto gerado
+│   ├── README.md              # detalhes da integração
+│   └── agents/                # 5 agent presets (build/install/patch)
 ├── README.md                  # Documentação principal
 ├── CONTRIBUTING.md            # Guia de contribuição
 ├── CHANGELOG.md               # Histórico de versões
-└── install.sh                 # Script de instalação
+└── install.sh                 # Script de instalação (OpenCode)
 ```
 
 ## Como Usar as Skills
@@ -50,26 +56,51 @@ Ou mencione diretamente:
 
 As skills são listadas automaticamente na descrição da ferramenta `skill`. O agente vê todas as skills disponíveis e pode carregar a mais adequada.
 
+## DeepSeek Harness (dsh)
+
+Esta biblioteca também roda no DeepSeek Harness, que descobre skills em diretórios
+**planos** (`<nome>/SKILL.md`) nos roots `.dsh/skills` (projeto), `~/.dsh/skills`
+(usuário) e `customSkillDirs`. Por isso `dsh/` cria symlinks de
+`skills/<categoria>/<skill>` para os roots, em vez de copiar conteúdo.
+
+```bash
+./dsh/install.sh                  # skills (projeto + usuário) + 5 agent presets
+./dsh/install.sh --dry-run        # simulação
+./dsh/install.sh --uninstall      # remove o bloco de presets do perfil
+node dsh/sync-skills.mjs          # só as skills (grava skills.manifest.json)
+```
+
+- **Validação**: nomes kebab-case (regex `^[a-z0-9]+(-[a-z0-9]+)*$`), nome igual
+  ao diretório, sem duplicatas, `description` presente; avisa se a descrição
+  fugir da convenção (começar com `Use when...`, máx. 150 chars).
+- **Agentes**: 5 presets gerados do preset `standard` do dsh (backend, frontend,
+  devops, qualidade, docs-educacao). `qualidade` roda com filesystem somente
+  leitura; todos removem ferramentas de orquestração (goals, schedule, workflow).
+- **Ao adicionar/renomear skill**: rode `node dsh/sync-skills.mjs` (e commite o
+  `skills.manifest.json` atualizado). Detalhes em `dsh/README.md`.
+
 ## Categorias
 
 | Categoria | Qtd | Descrição |
 |-----------|-----|-----------|
 | AI | 13 | Ferramentas de IA e LLMs |
-| API | 6 | Design e implementação de APIs |
-| Architecture | 5 | Padrões de arquitetura |
-| Automation | 3 | Automação com n8n |
+| API | 5 | Design e implementação de APIs |
+| Architecture | 2 | Padrões de arquitetura |
+| Automation | 1 | Automação com n8n |
 | Backend | 7 | Desenvolvimento backend |
-| Code Quality | 5 | Qualidade de código |
-| Database | 4 | Bancos de dados |
+| Code Quality | 2 | Qualidade de código |
+| Database | 3 | Bancos de dados |
 | DevOps | 10 | DevOps e infraestrutura |
-| Documentation | 2 | Documentação |
+| Documentation | 1 | Documentação |
 | Education | 14 | Educação e ensino |
 | Foundation | 3 | Fundamentos do OpenCode |
-| Frontend | 4 | Desenvolvimento frontend |
+| Frontend | 2 | Desenvolvimento frontend |
 | Inclusion | 19 | Acessibilidade e inclusão |
-| Productivity | 3 | Produtividade |
-| Security | 4 | Segurança |
+| Productivity | 1 | Produtividade |
+| Security | 3 | Segurança |
 | Testing | 4 | Testes |
+
+Total: **90 skills** — fonte da verdade é `dsh/skills.manifest.json`.
 
 ## Formato de uma Skill
 

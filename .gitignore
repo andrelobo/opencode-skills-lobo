@@ -1,0 +1,12 @@
+.dsh/
+.tmp/
+node_modules/
+
+# bootstrap: bundles e segredos nunca versionados
+bootstrap/bundles/
+*.gpg
+*.age
+secrets/
+*.env
+.env
+
