@@ -64,21 +64,43 @@ git pull
 | # | Categoria | Skills | Descrição |
 |---|-----------|--------|-----------|
 | 1 | AI | 13 | Ferramentas de IA e LLMs |
-| 2 | API | 6 | Design e implementação de APIs |
-| 3 | Architecture | 5 | Padrões de arquitetura |
-| 4 | Automation | 3 | Automação com n8n |
+| 2 | API | 5 | Design e implementação de APIs |
+| 3 | Architecture | 2 | Padrões de arquitetura |
+| 4 | Automation | 1 | Automação com n8n |
 | 5 | Backend | 7 | Desenvolvimento backend |
-| 6 | Code Quality | 5 | Qualidade de código |
-| 7 | Database | 4 | Bancos de dados |
+| 6 | Code Quality | 2 | Qualidade de código |
+| 7 | Database | 3 | Bancos de dados |
 | 8 | DevOps | 10 | DevOps e infraestrutura |
-| 9 | Documentation | 2 | Documentação |
+| 9 | Documentation | 1 | Documentação |
 | 10 | Education | 14 | Educação e ensino |
 | 11 | Foundation | 3 | Fundamentos do OpenCode |
-| 12 | Frontend | 4 | Desenvolvimento frontend |
+| 12 | Frontend | 2 | Desenvolvimento frontend |
 | 13 | Inclusion | 19 | Acessibilidade e inclusão |
-| 14 | Productivity | 3 | Produtividade |
-| 15 | Security | 4 | Segurança |
+| 14 | Productivity | 1 | Produtividade |
+| 15 | Security | 3 | Segurança |
 | 16 | Testing | 4 | Testes |
+
+---
+
+## Instalação no DeepSeek Harness (dsh)
+
+As skills também rodam no [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness).
+Como o dsh varre diretórios **planos** (`<nome>/SKILL.md`), o diretório `dsh/`
+cria uma árvore de symlinks a partir de `skills/<categoria>/<skill>`:
+
+```bash
+./dsh/install.sh            # skills (projeto + usuário) e 5 agent presets
+./dsh/install.sh --dry-run  # só mostra o que seria feito
+```
+
+O que isso registra:
+
+- **90 skills** em `.dsh/skills` (escopo projeto) e `~/.dsh/skills` (escopo
+  usuário, válido em qualquer projeto);
+- **5 agent presets** no perfil do harness: `backend`, `frontend`, `devops`,
+  `qualidade` (somente leitura) e `docs-educacao`.
+
+Detalhes, validação e como desinstalar: [`dsh/README.md`](dsh/README.md).
 
 ---
 
@@ -107,8 +129,16 @@ opencode-skills-lobo/
 ├── CONTRIBUTING.md    # Guia de contribuição
 ├── CHANGELOG.md       # Histórico de versões
 ├── LICENSE            # MIT License
-├── install.sh         # Script de instalação
+├── install.sh         # Script de instalação (OpenCode)
 ├── sync.sh            # Script de sincronização
+├── dsh/               # Integração com o DeepSeek Harness
+│   ├── install.sh             # skills + agent presets
+│   ├── sync-skills.mjs        # valida e cria a árvore plana de symlinks
+│   ├── skills.manifest.json   # manifesto gerado (nome, categoria, descrição)
+│   └── agents/
+│       ├── build-presets.mjs  # gera os presets a partir do preset standard
+│       ├── install.mjs        # instala/remove o bloco no perfil do harness
+│       └── presets.patch.yml  # 5 agent presets gerados
 └── skills/            # 90 skills em 16 categorias
     ├── ai/
     ├── api/
@@ -139,6 +169,7 @@ opencode-skills-lobo/
 | OpenCode (Desktop) | ✅ |
 | OpenCode (IDE) | ✅ |
 | Claude Code | ✅ |
+| DeepSeek Harness (`dsh`) | ✅ (via `dsh/install.sh`, inclui agent presets) |
 
 ---
 

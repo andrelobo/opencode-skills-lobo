@@ -1,0 +1,107 @@
+{
+  "generatedBy": "dsh/agents/build-presets.mjs",
+  "template": "/home/lobo/.nvm/versions/node/v22.23.1/lib/node_modules/@deepseek-ai/dsh/node_modules/@deepseek-ai/dsh-web-app/presets/standard.patch.yml",
+  "presets": [
+    {
+      "id": "backend",
+      "name": "Backend Engineer",
+      "description": "APIs, banco de dados, serviços e integrações backend.",
+      "order": 10,
+      "readOnlyFs": false,
+      "skills": [
+        "api-design",
+        "rest",
+        "graphql",
+        "openapi",
+        "express",
+        "nestjs",
+        "nodejs",
+        "python",
+        "php",
+        "postgresql",
+        "mongodb",
+        "redis",
+        "jwt",
+        "oauth",
+        "docker",
+        "test-generation",
+        "code-review",
+        "security-audit"
+      ]
+    },
+    {
+      "id": "frontend",
+      "name": "Frontend Engineer",
+      "description": "React, Next.js, TypeScript, acessibilidade e performance de UI.",
+      "order": 11,
+      "readOnlyFs": false,
+      "skills": [
+        "react",
+        "nextjs",
+        "typescript",
+        "javascript",
+        "acessibilidade-web",
+        "wcag",
+        "performance",
+        "playwright",
+        "code-review"
+      ]
+    },
+    {
+      "id": "devops",
+      "name": "DevOps / SRE",
+      "description": "CI/CD, containers, cloud, deploy e observabilidade.",
+      "order": 12,
+      "readOnlyFs": false,
+      "skills": [
+        "cicd",
+        "docker",
+        "docker-compose",
+        "cloud",
+        "deploy",
+        "linux",
+        "git-workflow",
+        "observabilidade",
+        "logs",
+        "security-audit",
+        "n8n"
+      ]
+    },
+    {
+      "id": "qualidade",
+      "name": "QA & Segurança",
+      "description": "Revisão de código, estratégia de testes e auditoria de segurança (somente leitura).",
+      "order": 13,
+      "readOnlyFs": true,
+      "skills": [
+        "code-review",
+        "security-audit",
+        "test-strategy",
+        "test-generation",
+        "playwright",
+        "refactor",
+        "performance",
+        "skill-validator",
+        "skill-auditor"
+      ]
+    },
+    {
+      "id": "docs-educacao",
+      "name": "Docs & Educação",
+      "description": "Documentação técnica, conteúdo educacional e linguagem inclusiva.",
+      "order": 14,
+      "readOnlyFs": false,
+      "skills": [
+        "doc-writer",
+        "linguagem-simples",
+        "acessibilidade-conteudo",
+        "cursos",
+        "planejamento",
+        "materiais-didaticos",
+        "apostilas",
+        "palestras",
+        "treinamentos"
+      ]
+    }
+  ]
+}

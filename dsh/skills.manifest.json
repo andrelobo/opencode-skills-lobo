@@ -1,0 +1,659 @@
+{
+  "generatedBy": "dsh/sync-skills.mjs",
+  "repo": "/home/lobo/Área de trabalho/KODE/opencode-skills-lobo",
+  "scopes": [
+    "project",
+    "user"
+  ],
+  "total": 90,
+  "categories": {
+    "ai": 13,
+    "api": 5,
+    "architecture": 2,
+    "automation": 1,
+    "backend": 7,
+    "code-quality": 2,
+    "database": 3,
+    "devops": 10,
+    "documentation": 1,
+    "education": 14,
+    "foundation": 3,
+    "frontend": 2,
+    "inclusion": 19,
+    "productivity": 1,
+    "security": 3,
+    "testing": 4
+  },
+  "skills": [
+    {
+      "name": "agentes",
+      "category": "ai",
+      "description": "Use when building AI agents with tools, memory, planning and multi-agent systems. Use ONLY for agent architecture, not LLM config or prompts.",
+      "lines": 102,
+      "path": "skills/ai/agentes/SKILL.md"
+    },
+    {
+      "name": "analise-arquitetural",
+      "category": "ai",
+      "description": "Use for AI-assisted codebase analysis: code smells, patterns, dependencies, complexity. Use ONLY for architecture review, not debugging.",
+      "lines": 113,
+      "path": "skills/ai/analise-arquitetural/SKILL.md"
+    },
+    {
+      "name": "automacao",
+      "category": "ai",
+      "description": "Use when automating tasks with AI: code, tests, deploy and integrations. Use ONLY for repetitive process automation, not workflow orchestration.",
+      "lines": 99,
+      "path": "skills/ai/automacao/SKILL.md"
+    },
+    {
+      "name": "code-generation",
+      "category": "ai",
+      "description": "Use when generating, scaffolding or refactoring code with AI, including boilerplate. Use ONLY for programmatic code creation, not code review.",
+      "lines": 125,
+      "path": "skills/ai/code-generation/SKILL.md"
+    },
+    {
+      "name": "debug",
+      "category": "ai",
+      "description": "Use for AI-assisted debugging: error analysis, fix suggestions, tracing, profiling. Use ONLY for debugging, not code review or architecture analysis.",
+      "lines": 117,
+      "path": "skills/ai/debug/SKILL.md"
+    },
+    {
+      "name": "ferramentas",
+      "category": "ai",
+      "description": "Use when selecting or configuring tools for LLMs: function calling, APIs, code execution. Use ONLY for tool orchestration, not general LLM prompting.",
+      "lines": 118,
+      "path": "skills/ai/ferramentas/SKILL.md"
+    },
+    {
+      "name": "llms",
+      "category": "ai",
+      "description": "Use when working with LLMs: tokens, context, parameters, fine-tuning, RAG, embeddings. Use ONLY for LLM config and model selection, not agents.",
+      "lines": 101,
+      "path": "skills/ai/llms/SKILL.md"
+    },
+    {
+      "name": "mcp",
+      "category": "ai",
+      "description": "Use when working with MCP to connect LLMs to external data, tools and services via servers. Use ONLY for MCP protocol, not general LLM integration.",
+      "lines": 110,
+      "path": "skills/ai/mcp/SKILL.md"
+    },
+    {
+      "name": "memoria",
+      "category": "ai",
+      "description": "Use when implementing agent memory: short/long-term, conversation persistence, context. Use ONLY for agent memory, not general data storage.",
+      "lines": 107,
+      "path": "skills/ai/memoria/SKILL.md"
+    },
+    {
+      "name": "planejamento-ai",
+      "category": "ai",
+      "description": "Use when planning tasks with AI: decomposition, CoT/ToT reasoning, plan generation. Use ONLY for structured AI planning, not simple prompts.",
+      "lines": 121,
+      "path": "skills/ai/planejamento-ai/SKILL.md"
+    },
+    {
+      "name": "prompt-engineering",
+      "category": "ai",
+      "description": "Use when designing or optimizing prompts for LLMs to improve output quality. Use ONLY for prompt design and techniques, not LLM app building.",
+      "lines": 103,
+      "path": "skills/ai/prompt-engineering/SKILL.md"
+    },
+    {
+      "name": "rag",
+      "category": "ai",
+      "description": "Use when implementing RAG: indexing, embeddings, chunking and retrieval from knowledge bases. Use ONLY for RAG pipelines, not general LLM usage.",
+      "lines": 102,
+      "path": "skills/ai/rag/SKILL.md"
+    },
+    {
+      "name": "workflows",
+      "category": "ai",
+      "description": "Use when creating AI workflows: chaining LLM calls, pipelines, multi-step orchestration. Use ONLY for workflow design, not MCP or prompt engineering.",
+      "lines": 95,
+      "path": "skills/ai/workflows/SKILL.md"
+    },
+    {
+      "name": "graphql",
+      "category": "api",
+      "description": "Use when designing GraphQL APIs with schemas, resolvers, and queries. Use ONLY when the task is about GraphQL, not REST.",
+      "lines": 111,
+      "path": "skills/api/graphql/SKILL.md"
+    },
+    {
+      "name": "openapi",
+      "category": "api",
+      "description": "Use when working with OpenAPI spec for API design, validation, and tooling. Use ONLY when the task is about OpenAPI, not Swagger docs.",
+      "lines": 116,
+      "path": "skills/api/openapi/SKILL.md"
+    },
+    {
+      "name": "rest",
+      "category": "api",
+      "description": "Use when designing RESTful APIs with conventions, status codes, and resources. Use ONLY when the task is about REST, not GraphQL.",
+      "lines": 103,
+      "path": "skills/api/rest/SKILL.md"
+    },
+    {
+      "name": "swagger",
+      "category": "api",
+      "description": "Use when documenting APIs with Swagger/OpenAPI for interactive docs and code generation. Use ONLY when the task is about Swagger docs, not API design.",
+      "lines": 117,
+      "path": "skills/api/swagger/SKILL.md"
+    },
+    {
+      "name": "websocket",
+      "category": "api",
+      "description": "Use when implementing WebSocket for real-time communication, chat, and live updates. Use ONLY when the task is about WebSocket, not REST or GraphQL.",
+      "lines": 132,
+      "path": "skills/api/websocket/SKILL.md"
+    },
+    {
+      "name": "api-design",
+      "category": "architecture",
+      "description": "Use when designing REST, GraphQL, or gRPC APIs with endpoints and auth. Use ONLY when the task is about API design, not implementation.",
+      "lines": 120,
+      "path": "skills/architecture/api-design/SKILL.md"
+    },
+    {
+      "name": "performance",
+      "category": "architecture",
+      "description": "Use when optimizing app performance: complexity, profiling, memory, load. Use ONLY when the task is about performance, not code review.",
+      "lines": 112,
+      "path": "skills/architecture/performance/SKILL.md"
+    },
+    {
+      "name": "n8n",
+      "category": "automation",
+      "description": "Use when creating workflows with n8n to integrate services and APIs. Use ONLY when the task is about n8n, not other tools.",
+      "lines": 88,
+      "path": "skills/automation/n8n/SKILL.md"
+    },
+    {
+      "name": "express",
+      "category": "backend",
+      "description": "Use when building web apps and APIs with Express.js, middleware, and routing. Use ONLY when the task is about Express, not NestJS or Node.js.",
+      "lines": 113,
+      "path": "skills/backend/express/SKILL.md"
+    },
+    {
+      "name": "javascript",
+      "category": "backend",
+      "description": "Use when working with JavaScript for dev, ES6+, modules, and async/await. Use ONLY when the task is about JavaScript, not TypeScript or frameworks.",
+      "lines": 131,
+      "path": "skills/backend/javascript/SKILL.md"
+    },
+    {
+      "name": "nestjs",
+      "category": "backend",
+      "description": "Use when building scalable server apps with NestJS, TypeScript, modules, and decorators. Use ONLY when the task is about NestJS, not Express.",
+      "lines": 108,
+      "path": "skills/backend/nestjs/SKILL.md"
+    },
+    {
+      "name": "nodejs",
+      "category": "backend",
+      "description": "Use when working with Node.js for server-side dev, APIs, and runtime config. Use ONLY when the task is about Node.js, not NestJS or Express.",
+      "lines": 102,
+      "path": "skills/backend/nodejs/SKILL.md"
+    },
+    {
+      "name": "php",
+      "category": "backend",
+      "description": "Use when working with PHP for server-side dev, web apps, and CMS integration. Use ONLY when the task is about PHP, not Laravel or Symfony.",
+      "lines": 95,
+      "path": "skills/backend/php/SKILL.md"
+    },
+    {
+      "name": "python",
+      "category": "backend",
+      "description": "Use when working with Python for backend dev, scripts, data processing, and automation. Use ONLY when the task is about Python, not Django or FastAPI.",
+      "lines": 114,
+      "path": "skills/backend/python/SKILL.md"
+    },
+    {
+      "name": "typescript",
+      "category": "backend",
+      "description": "Use when working with TypeScript for type-safe dev with types, interfaces, and generics. Use ONLY when the task is about TypeScript, not frameworks.",
+      "lines": 127,
+      "path": "skills/backend/typescript/SKILL.md"
+    },
+    {
+      "name": "code-review",
+      "category": "code-quality",
+      "description": "Use when reviewing code for quality, style, complexity, and maintainability. Use ONLY when the task is about code review, not tests.",
+      "lines": 94,
+      "path": "skills/code-quality/code-review/SKILL.md"
+    },
+    {
+      "name": "refactor",
+      "category": "code-quality",
+      "description": "Use when refactoring code to improve structure without changing behavior. Use ONLY when the task is about code restructuring, not review.",
+      "lines": 122,
+      "path": "skills/code-quality/refactor/SKILL.md"
+    },
+    {
+      "name": "mongodb",
+      "category": "database",
+      "description": "Use when working with MongoDB for NoSQL database design and queries. Use ONLY when the task is about MongoDB, not PostgreSQL.",
+      "lines": 102,
+      "path": "skills/database/mongodb/SKILL.md"
+    },
+    {
+      "name": "postgresql",
+      "category": "database",
+      "description": "Use when working with PostgreSQL for relational DB design and SQL. Use ONLY when the task is about PostgreSQL, not MongoDB.",
+      "lines": 105,
+      "path": "skills/database/postgresql/SKILL.md"
+    },
+    {
+      "name": "redis",
+      "category": "database",
+      "description": "Use when working with Redis for caching, sessions, queues, and real-time data. Use ONLY when the task is about Redis, not MongoDB or PostgreSQL.",
+      "lines": 111,
+      "path": "skills/database/redis/SKILL.md"
+    },
+    {
+      "name": "cicd",
+      "category": "devops",
+      "description": "Use when working with CI/CD pipelines (GitHub Actions, GitLab CI). Use ONLY when the task is about pipeline config, not deployment.",
+      "lines": 121,
+      "path": "skills/devops/cicd/SKILL.md"
+    },
+    {
+      "name": "cloud",
+      "category": "devops",
+      "description": "Use when working with AWS, GCP, or Azure for infrastructure. Use ONLY when the task is about cloud infrastructure, not deployment.",
+      "lines": 115,
+      "path": "skills/devops/cloud/SKILL.md"
+    },
+    {
+      "name": "deploy",
+      "category": "devops",
+      "description": "Use when deploying apps to production (Vercel, AWS, etc). Use ONLY when the task is about deployment, not CI/CD pipelines.",
+      "lines": 114,
+      "path": "skills/devops/deploy/SKILL.md"
+    },
+    {
+      "name": "devops",
+      "category": "devops",
+      "description": "Use when working with DevOps practices, IaC, and automation. Use ONLY when the task is about DevOps practices, not specific tools.",
+      "lines": 114,
+      "path": "skills/devops/devops/SKILL.md"
+    },
+    {
+      "name": "docker",
+      "category": "devops",
+      "description": "Use when working with Docker for containerization and Dockerfiles. Use ONLY when the task is about Docker, not Docker Compose.",
+      "lines": 105,
+      "path": "skills/devops/docker/SKILL.md"
+    },
+    {
+      "name": "docker-compose",
+      "category": "devops",
+      "description": "Use when working with Docker Compose for multi-container apps. Use ONLY when the task is about Docker Compose, not single containers.",
+      "lines": 131,
+      "path": "skills/devops/docker-compose/SKILL.md"
+    },
+    {
+      "name": "github",
+      "category": "devops",
+      "description": "Use when working with GitHub for repos, PRs, Actions, and collaboration. Use ONLY when the task is about GitHub, not Git.",
+      "lines": 127,
+      "path": "skills/devops/github/SKILL.md"
+    },
+    {
+      "name": "linux",
+      "category": "devops",
+      "description": "Use when working with Linux systems, shell, permissions, and systemd. Use ONLY when the task is about Linux admin, not CI/CD.",
+      "lines": 118,
+      "path": "skills/devops/linux/SKILL.md"
+    },
+    {
+      "name": "logs",
+      "category": "devops",
+      "description": "Use when working with structured logging and log aggregation. Use ONLY when the task is about logging, not general observability.",
+      "lines": 101,
+      "path": "skills/devops/logs/SKILL.md"
+    },
+    {
+      "name": "observabilidade",
+      "category": "devops",
+      "description": "Use when implementing observability: metrics, traces, dashboards, alerting. Use ONLY when the task is about observability, not performance.",
+      "lines": 120,
+      "path": "skills/devops/observabilidade/SKILL.md"
+    },
+    {
+      "name": "doc-writer",
+      "category": "documentation",
+      "description": "Use when creating or updating technical docs for code, APIs, or systems. Use ONLY when the task is about documentation, not code review.",
+      "lines": 139,
+      "path": "skills/documentation/doc-writer/SKILL.md"
+    },
+    {
+      "name": "apostilas",
+      "category": "education",
+      "description": "Use when creating course materials, handouts, and study guides. Use ONLY when the task is about educational content, not documentation.",
+      "lines": 140,
+      "path": "skills/education/apostilas/SKILL.md"
+    },
+    {
+      "name": "aprendizagem-ativa",
+      "category": "education",
+      "description": "Use when designing active learning like PBL, flipped classroom, gamification. Use ONLY when the task is about active learning, not content.",
+      "lines": 122,
+      "path": "skills/education/aprendizagem-ativa/SKILL.md"
+    },
+    {
+      "name": "avaliacoes",
+      "category": "education",
+      "description": "Use when designing or reviewing learning assessments, formative or summative. Use ONLY when the task is about assessment, not course design.",
+      "lines": 116,
+      "path": "skills/education/avaliacoes/SKILL.md"
+    },
+    {
+      "name": "certificados",
+      "category": "education",
+      "description": "Use when issuing or managing digital certificates with templates and QR codes. Use ONLY when the task is about certificates, not diplomas.",
+      "lines": 105,
+      "path": "skills/education/certificados/SKILL.md"
+    },
+    {
+      "name": "cursos",
+      "category": "education",
+      "description": "Use when creating courses with modules, syllabus, and methodologies. Use ONLY when the task is about course creation, not planning.",
+      "lines": 114,
+      "path": "skills/education/cursos/SKILL.md"
+    },
+    {
+      "name": "ead",
+      "category": "education",
+      "description": "Use when designing distance education (EAD) content, LMS, or MOOCs. Use ONLY when the task is about EAD, not classroom teaching.",
+      "lines": 134,
+      "path": "skills/education/ead/SKILL.md"
+    },
+    {
+      "name": "materiais-didaticos",
+      "category": "education",
+      "description": "Use when creating educational materials like texts, videos, and infographics. Use ONLY when the task is about materials, not curriculum.",
+      "lines": 129,
+      "path": "skills/education/materiais-didaticos/SKILL.md"
+    },
+    {
+      "name": "oficinas",
+      "category": "education",
+      "description": "Use when planning hands-on workshops with active learning and group dynamics. Use ONLY when the task is about workshops, not training design.",
+      "lines": 143,
+      "path": "skills/education/oficinas/SKILL.md"
+    },
+    {
+      "name": "palestras",
+      "category": "education",
+      "description": "Use when preparing presentations or talks with storytelling, slides, and Q&A. Use ONLY when the task is about talk preparation, not course material.",
+      "lines": 142,
+      "path": "skills/education/palestras/SKILL.md"
+    },
+    {
+      "name": "planejamento",
+      "category": "education",
+      "description": "Use when creating pedagogical plans, lesson plans, and teaching strategies. Use ONLY when the task is about educational planning, not course creation.",
+      "lines": 123,
+      "path": "skills/education/planejamento/SKILL.md"
+    },
+    {
+      "name": "questionarios",
+      "category": "education",
+      "description": "Use when creating questionnaires or quizzes with various question types. Use ONLY when the task is about questionnaires, not exams or rubrics.",
+      "lines": 137,
+      "path": "skills/education/questionarios/SKILL.md"
+    },
+    {
+      "name": "relatorios",
+      "category": "education",
+      "description": "Use when creating educational reports for performance analysis and decision-making. Use ONLY when the task is about reporting, not rubric design.",
+      "lines": 130,
+      "path": "skills/education/relatorios/SKILL.md"
+    },
+    {
+      "name": "rubricas",
+      "category": "education",
+      "description": "Use when creating educational rubrics with criteria, scales, and descriptors. Use ONLY when the task is about rubric design, not documentation.",
+      "lines": 132,
+      "path": "skills/education/rubricas/SKILL.md"
+    },
+    {
+      "name": "treinamentos",
+      "category": "education",
+      "description": "Use when designing corporate training with instructional design, ADDIE, and KPIs. Use ONLY when the task is about training programs, not workshops.",
+      "lines": 133,
+      "path": "skills/education/treinamentos/SKILL.md"
+    },
+    {
+      "name": "skill-auditor",
+      "category": "foundation",
+      "description": "Use when auditing skills for conflicts, duplications, and quality scores. Use ONLY when the task is about skill audit, not creation or editing.",
+      "lines": 105,
+      "path": "skills/foundation/skill-auditor/SKILL.md"
+    },
+    {
+      "name": "skill-creator",
+      "category": "foundation",
+      "description": "Use when creating new opencode skills or SKILL.md files. Use ONLY when the task is about skill creation, not editing or validating.",
+      "lines": 97,
+      "path": "skills/foundation/skill-creator/SKILL.md"
+    },
+    {
+      "name": "skill-validator",
+      "category": "foundation",
+      "description": "Use when validating skills for conventions, frontmatter, and structure. Use ONLY when the task is about skill validation, not creation.",
+      "lines": 111,
+      "path": "skills/foundation/skill-validator/SKILL.md"
+    },
+    {
+      "name": "nextjs",
+      "category": "frontend",
+      "description": "Use when working with Next.js for SSR, SSG, routing, and API routes. Use ONLY when the task is about Next.js, not plain React.",
+      "lines": 104,
+      "path": "skills/frontend/nextjs/SKILL.md"
+    },
+    {
+      "name": "react",
+      "category": "frontend",
+      "description": "Use when working with React components, hooks, and state management. Use ONLY when the task is about React, not Next.js or others.",
+      "lines": 98,
+      "path": "skills/frontend/react/SKILL.md"
+    },
+    {
+      "name": "acessibilidade",
+      "category": "inclusion",
+      "description": "Use when addressing accessibility in urban environments or digital interfaces. Use ONLY when the task is about general accessibility, not WCAG.",
+      "lines": 107,
+      "path": "skills/inclusion/acessibilidade/SKILL.md"
+    },
+    {
+      "name": "acessibilidade-aplicacoes",
+      "category": "inclusion",
+      "description": "Use when implementing accessibility in mobile and desktop apps with WCAG. Use ONLY when the task is about app accessibility, not documents.",
+      "lines": 115,
+      "path": "skills/inclusion/acessibilidade-aplicacoes/SKILL.md"
+    },
+    {
+      "name": "acessibilidade-conteudo",
+      "category": "inclusion",
+      "description": "Use when making digital content accessible with captions and alt text. Use ONLY when the task is about content accessibility, not apps.",
+      "lines": 113,
+      "path": "skills/inclusion/acessibilidade-conteudo/SKILL.md"
+    },
+    {
+      "name": "acessibilidade-documentos",
+      "category": "inclusion",
+      "description": "Use when creating accessible documents with structure, alt text, and tagging. Use ONLY when the task is about document accessibility, not apps.",
+      "lines": 117,
+      "path": "skills/inclusion/acessibilidade-documentos/SKILL.md"
+    },
+    {
+      "name": "acessibilidade-web",
+      "category": "inclusion",
+      "description": "Use when testing website accessibility with WAVE, Axe, or keyboard nav. Use ONLY when the task is about web accessibility, not reports.",
+      "lines": 92,
+      "path": "skills/inclusion/acessibilidade-web/SKILL.md"
+    },
+    {
+      "name": "comunicacao-inclusiva",
+      "category": "inclusion",
+      "description": "Use when producing respectful, accessible, non-violent communication. Use ONLY when the task is about inclusive communication, not copywriting.",
+      "lines": 97,
+      "path": "skills/inclusion/comunicacao-inclusiva/SKILL.md"
+    },
+    {
+      "name": "consultorias",
+      "category": "inclusion",
+      "description": "Use when providing inclusion consulting from diagnosis to implementation. Use ONLY when the task is about inclusion consulting, not training.",
+      "lines": 119,
+      "path": "skills/inclusion/consultorias/SKILL.md"
+    },
+    {
+      "name": "diagnosticos",
+      "category": "inclusion",
+      "description": "Use when performing accessibility diagnostics or compliance analysis. Use ONLY when the task is about inclusion diagnostics, not indicators.",
+      "lines": 108,
+      "path": "skills/inclusion/diagnosticos/SKILL.md"
+    },
+    {
+      "name": "inclusao-digital",
+      "category": "inclusion",
+      "description": "Use when working with digital inclusion to bridge the digital divide. Use ONLY when the task is about digital inclusion, not WCAG.",
+      "lines": 105,
+      "path": "skills/inclusion/inclusao-digital/SKILL.md"
+    },
+    {
+      "name": "indicadores",
+      "category": "inclusion",
+      "description": "Use when defining inclusion indicators, accessibility metrics, and KPIs. Use ONLY when the task is about metrics, not diagnostics.",
+      "lines": 113,
+      "path": "skills/inclusion/indicadores/SKILL.md"
+    },
+    {
+      "name": "libras",
+      "category": "inclusion",
+      "description": "Use when working with Libras translation, interpretation, or deaf content. Use ONLY when the task is about Libras or deaf inclusion, not WCAG.",
+      "lines": 93,
+      "path": "skills/inclusion/libras/SKILL.md"
+    },
+    {
+      "name": "linguagem-simples",
+      "category": "inclusion",
+      "description": "Use when applying plain language with clear vocabulary and short sentences. Use ONLY when the task is about plain language, not editing.",
+      "lines": 97,
+      "path": "skills/inclusion/linguagem-simples/SKILL.md"
+    },
+    {
+      "name": "pesquisas",
+      "category": "inclusion",
+      "description": "Use when conducting research with data collection, analysis, and reporting. Use ONLY when the task is about research methods, not diagnostics.",
+      "lines": 120,
+      "path": "skills/inclusion/pesquisas/SKILL.md"
+    },
+    {
+      "name": "projetos-sociais",
+      "category": "inclusion",
+      "description": "Use when creating social inclusion projects from planning to evaluation. Use ONLY when the task is about social projects, not training or consulting.",
+      "lines": 139,
+      "path": "skills/inclusion/projetos-sociais/SKILL.md"
+    },
+    {
+      "name": "questionarios-inclusao",
+      "category": "inclusion",
+      "description": "Use when creating questionnaires about special needs or inclusion surveys. Use ONLY when the task is about inclusion questionnaires, not testing.",
+      "lines": 93,
+      "path": "skills/inclusion/questionarios-inclusao/SKILL.md"
+    },
+    {
+      "name": "relatorios-tecnicos",
+      "category": "inclusion",
+      "description": "Use when creating accessibility reports or compliance documentation. Use ONLY when the task is about technical reports, not questionnaires.",
+      "lines": 97,
+      "path": "skills/inclusion/relatorios-tecnicos/SKILL.md"
+    },
+    {
+      "name": "tecnologias-assistivas",
+      "category": "inclusion",
+      "description": "Use when selecting or developing assistive technology like screen readers. Use ONLY when the task is about assistive technology, not WCAG.",
+      "lines": 100,
+      "path": "skills/inclusion/tecnologias-assistivas/SKILL.md"
+    },
+    {
+      "name": "treinamentos-corporativos",
+      "category": "inclusion",
+      "description": "Use when creating corporate training on diversity, equity, and inclusion. Use ONLY when the task is about DEI training, not general training.",
+      "lines": 139,
+      "path": "skills/inclusion/treinamentos-corporativos/SKILL.md"
+    },
+    {
+      "name": "wcag",
+      "category": "inclusion",
+      "description": "Use when working with WCAG including POUR principles and testing. Use ONLY when the task is about WCAG standards, not general accessibility.",
+      "lines": 97,
+      "path": "skills/inclusion/wcag/SKILL.md"
+    },
+    {
+      "name": "git-workflow",
+      "category": "productivity",
+      "description": "Use when managing git workflows: branching, merge vs rebase, conflicts. Use ONLY when the task is about git workflow, not commits.",
+      "lines": 111,
+      "path": "skills/productivity/git-workflow/SKILL.md"
+    },
+    {
+      "name": "jwt",
+      "category": "security",
+      "description": "Use when implementing JWT auth for APIs and applications. Use ONLY when the task is about JWT tokens, not OAuth or other methods.",
+      "lines": 111,
+      "path": "skills/security/jwt/SKILL.md"
+    },
+    {
+      "name": "oauth",
+      "category": "security",
+      "description": "Use when implementing OAuth 2.0 with providers like Google or GitHub. Use ONLY when the task is about OAuth, not JWT or basic auth.",
+      "lines": 117,
+      "path": "skills/security/oauth/SKILL.md"
+    },
+    {
+      "name": "security-audit",
+      "category": "security",
+      "description": "Use when auditing code for vulnerabilities: injection, XSS, CSRF, auth. Use ONLY when the task is about security audit, not code review.",
+      "lines": 103,
+      "path": "skills/security/security-audit/SKILL.md"
+    },
+    {
+      "name": "playwright",
+      "category": "testing",
+      "description": "Use when writing E2E tests with Playwright for web apps. Use ONLY when the task is about Playwright, not Puppeteer.",
+      "lines": 107,
+      "path": "skills/testing/playwright/SKILL.md"
+    },
+    {
+      "name": "puppeteer",
+      "category": "testing",
+      "description": "Use when working with Puppeteer for automation, scraping, and PDFs. Use ONLY when the task is about Puppeteer, not Playwright.",
+      "lines": 110,
+      "path": "skills/testing/puppeteer/SKILL.md"
+    },
+    {
+      "name": "test-generation",
+      "category": "testing",
+      "description": "Use when generating unit, integration, or E2E tests for code. Use ONLY when the task is about test creation, not review.",
+      "lines": 108,
+      "path": "skills/testing/test-generation/SKILL.md"
+    },
+    {
+      "name": "test-strategy",
+      "category": "testing",
+      "description": "Use when defining testing strategy: pyramid, tools, metrics, processes. Use ONLY when the task is about test strategy, not test generation.",
+      "lines": 105,
+      "path": "skills/testing/test-strategy/SKILL.md"
+    }
+  ]
+}
